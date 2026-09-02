@@ -11,7 +11,7 @@ dia = st.date_input(
       date.today())
 
 def load_data_jogos():
-  API_KEY = cmsa0nii002b34dw4b8vfwqma
+  API_KEY = "cmsa0nii002b34dw4b8vfwqma"
   DIA = date.today().isoformat()
   url = f"https://futpythontrader.com.br/api/jogos-do-dia?date={DIA}&format=csv&api_key={API_KEY}"
 
