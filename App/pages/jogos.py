@@ -13,7 +13,7 @@ dia = st.date_input(
 def load_data_jogos():
   API_KEY = "cmsa0nii002b34dw4b8vfwqma"
   DIA = date.today().isoformat()
-  url = f"https://futpythontrader.com.br/api/jogos-do-dia?date="+str(dia)+"&format=csv&api_key={API_KEY}"
+  url = f"https://futpythontrader.com.br/api/jogos-do-dia?date={DIA}&format=csv&api_key={API_KEY}"
 
   jogos_do_dia = pd.read_csv(url)
   # display(jogos_do_dia)
