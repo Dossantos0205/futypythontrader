@@ -15,7 +15,9 @@ def load_data_jogos():
   DIA = date.today().isoformat()
   url = f"https://futpythontrader.com.br/api/jogos-do-dia?date={DIA}&format=csv&api_key={API_KEY}"
 
-  return data_jogos
+  jogos_do_dia = pd.read_csv(url)
+  # display(jogos_do_dia)
+  return jogos_do_dia
 
 df_jogos = load_data_jogos()
 
